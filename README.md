@@ -2,4 +2,4 @@
 
 ## Table of Contents
 
-### Entry One
++ [Entry One](entries/entry-one.md)
