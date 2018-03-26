@@ -1,1 +1,5 @@
-<h1>Hello World</h1>
+# Independent Study
+
+## Table of Contents
+
+### Entry One
