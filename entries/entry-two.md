@@ -14,7 +14,7 @@ Going back to [this reading](https://github.com/learn-co-students/scraping-readi
 
 Continuing on, here is my example of basic web scraping:
 
-
+![Web Scraping Screenshot](../images/web-scraping-screenshot.PNG)
 
 * Line 4 grabs the HTML of the website, [Google](https://www.google.com/), and stores that into the variable `html`
 * Line 6 uses `Nokogiri::HTML`, a method that takes in a string of HTML, and turns `html` into **nested nodes** (elements where parent elements contain child elements)
