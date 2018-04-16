@@ -6,13 +6,13 @@ In this week, I made a plan about what I was going to do with web scraping. Howe
 
 Picking up where I left off in the [previous entry](https://github.com/geoffreyl4412/independent-study/blob/master/entries/entry-two.md), I want to grab specific text from my website. For this example, I want to get the blue "**Sign in**" button on [Google](https://www.google.com/)!
 
-
+![Google Screenshot](../images/google.PNG)
 
 1. First, I opened the Inspect Element tool (Command+Option+C for Mac or Control+Shift+C for Windows).
 2. Next, I moved the cursor to highlight the button and clicked on it.
 3. By doing so, the Elements panel highlighted the HTML for the button as shown below:
 
-
+![Google Inspect Element Screenshot](../images/google-inspect-element.PNG)
 
 4. After locating the button's id,`#gb_70`, I then needed to call the `.css` method onto my `doc` variable. This method takes in a CSS selector and selects it, which in this case is the id.
 5. If I just type `puts doc.css("#gb_70")`, this just gives the *entire element*. To get the text, I needed to add `.text` at the end of my method.
@@ -39,7 +39,7 @@ Not only can I make specific text show up, I can also *iterate* through my desir
 
 This time, I decided to use the [Administration page](http://www.hstat.org/about/faculty-2/) in the High School of Telecommunication Arts and Technology (HSTAT) website.
 
-
+![HSTAT Admin Scraping Screenshot](../images/hstat-admin-scraping.PNG)
 
 * On line 16, `doc.css(".entry-content p")` means selecting all of the `<p>` elements within the `.entry-content` class.
 * On line 20, `person.css("strong").text` selects only the text containing the `<strong>` element. 
