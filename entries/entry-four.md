@@ -8,7 +8,7 @@ After I completed the code along, I decided to make my own example to show off w
 
 In the code along, I had to scrape the course's `title`, `schedule`, and `description`. In my example, I chose to scrape from the "**Watch anywhere**" tab shown below:
 
-
+![Netflix](../images/netflix.PNG)
 
 I named the texts `device` and `category`. After that, I made my classes.
 
@@ -44,13 +44,13 @@ end
 
 Next, I used the inspect element tool, and saw that each section of text was inside `.tin-small-desc`. 
 
-
+![Netflix Inspect Element](../images/netflix_inspect_element.PNG)
 
 ## Finding with `binding.pry`
 
 To find what CSS selector the bolded text was in each section, I placed a `binding.pry` at the end of `get_page`. I ran the ruby file, and in the terminal, I typed `doc.css(".tin-small-desc")`, returning elements of `.tin-small-desc`. Then, I only got the first element by typing `doc.css(".tin-small-desc").first`. In the terminal I could see my desired text. 
 
-
+![Netflix Scrape](../images/netflix_scrape_first.PNG)
 
 The bold text and unbolded text are in `h3` and `span` respectively. I checked if this was true by typing `doc.css(".tin-small-desc").first.css("h3")` and `doc.css(".tin-small-desc").first.css("span")`, which indeed gives the element of the selector. I made the finishing touch by adding `.text` at the end of what I typed before, giving me the desired text.
 
