@@ -8,7 +8,7 @@ Like the previous entry, after I finished doing the [scraping kickstarter](https
 
 This time, I scraped my data from [Google's offices in North America](https://www.google.com/about/locations/?region=north-america).
 
-
+![Google Locations](../images/google-locations.PNG)
 
 ## Starting and Using `binding.pry`
 
@@ -31,7 +31,7 @@ As usual, I started off with these lines of code to scrape. The `binding.pry` is
 
 After running the file in my terminal, I used my inspect element tool on the website. *There, I saw each location had an* `offices-list` *class in an* `li`.
 
-
+![Google Locations Inspect Element](../images/google-locations-inspect-element.PNG)
 
 To check if I was correct, I typed in my terminal `google.css("li.offices-list").first` to only get the first location. This does indeed give me the first location.
 
@@ -43,7 +43,7 @@ The first thing I want to find is the city of each location. I used the inspect 
 
 Checking again by typing `office.css("h2.office-name").text` in Pry gives me the city of the first office. I also tried typing `google.css("li.offices-list").first.css("h2.office-name").text` (without using my `office` variable) and **it still gave me the same result**, which makes sense. 
 
-
+![Google Scraping City](../images/google-scraping-city.PNG)
 
 Moving forward, I want to scrape each image link, address, and phone number. To reiterate, I scrape them by following these same two steps:
 
