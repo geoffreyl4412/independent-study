@@ -16,7 +16,7 @@ After some more googling, I learned about the usefulness of the **`robots.txt`**
 
 It's a little late, but I finally decided to make my project about scraping YouTube. I think it's legal to scrape from their site, according to their [Terms of Service](https://www.youtube.com/static?template=terms) and googling. At first, I had thought about scraping videos from one specific channel, but I realized I could also scrape YouTube search results and even YouTube's home page. After all, each contains the same divs and classes. After a lot of thinking, I chose to scrape from YouTube's search results because the url is just what the user searches for.
 
-
+![YouTube Search Result](../images/youtube-search-result.PNG)
 
 Due to how long I spent on deciding what my MVP would be, I have to start building in the next entry.
 
