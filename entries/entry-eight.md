@@ -10,9 +10,9 @@ In my `model.rb` I used the variable `scraper_results` to store the XML elements
 
 After all of that, I entered in the word "chess", and the program returned the entire **content** (not images or any headings) of the Wikipedia page of Chess. I also check the actual article to make sure, and it was true. I finally had my MVP finished, but not without some challenges along the way. 
 
+![Scraper App Index](../images/scraper-app-index.PNG)
 
-
-
+![Scraper App Result](../images/scraper-app-result.PNG)
 
 ## Challenges
 
